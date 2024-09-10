@@ -6,6 +6,7 @@ from .Asset import Asset
 
 from . import BrokerAccount
 
+# Strategy object, not used.
 class Strategy(object):
     def __init__(self, strategy_name: str, account: 'BrokerAccount.BrokerAccount', targets: list[Asset],
                     active_orders: list[Order] = [], transactions: list[Transaction] = [], held_assets: list[HeldAsset] = []):
@@ -15,5 +16,6 @@ class Strategy(object):
         self.active_orders = active_orders
         self.transactions = transactions
         self.held_assets = held_assets
+        raise NotImplementedError("No use for Strategy object for now.")
     def get_actions(self) -> list[Order]:
         raise NotImplementedError
