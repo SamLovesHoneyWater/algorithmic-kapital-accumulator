@@ -22,7 +22,7 @@ When instantiating an asset, we need to define a quote_fn that is used to get th
 This function should be defined in the main program an fed to an Asset object upon instantiation.
 Notice that this function takes in an asset_name variable, so assets of the same type can use the same quote_fn.
 
-Each **Order** has an **OrderType** and an **OrderSide**, these are from the Alpaca SDK: https://alpaca.markets/sdks/python/api_reference/trading/enums.html
+Each **Order** has an **OrderType** and an **OrderSide**, these are from the Alpaca SDK: https://alpaca.markets/sdks/python/api_reference/trading/enums.html.
 
 Some objects are either not used or under development. These include: **HeldAsset**, **Strategy**, and **Transaction**.
 
@@ -34,12 +34,12 @@ When writing functions and methods, make sure to provide type definitions that s
 Before starting, you need to install static type checker mypy. A plugin is available for VSCode.
 To type check a piece of code, run "mypy main.py" in a terminal. If it fails, you have to fix your code or type declarations accordingly.
 
-*Code that fails type check will not be accepted into the main branch*
+*Code that fails type check will not be accepted into the main branch.*
 
 In src/models/datatypes, you will see several basic types defined, such as numeric types "Capital", "Quantity", "Price" as well as enum types such as "AssetType".
 Use those types when writing code to avoid confusion between variables of different types.
-For typing support, visit https://docs.python.org/3/library/typing.html
-For type errors in importing external modules, see https://mypy.readthedocs.io/en/stable/running_mypy.html
+For typing support, visit https://docs.python.org/3/library/typing.html.
+For type errors in importing external modules, see https://mypy.readthedocs.io/en/stable/running_mypy.html.
 
 A "# type ignore" comment can be added to the end of a line of code to prevent the type checker from checking it.
 "Type ignore" should only be used in the case of a "Missing library stubs or py.typed marker" error, when all viable fixes have been exhausted.
