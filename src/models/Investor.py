@@ -1,5 +1,6 @@
 from .data_types import *
 
+# Investor object, instantiate one for each person
 class Investor(object):
     def __init__(self, investor_name, accounts=[]):
         self.investor_name = investor_name
