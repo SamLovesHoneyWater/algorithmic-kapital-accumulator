@@ -1,5 +1,5 @@
 # algorithmic-kapital-accumulator
-Algorithmic Kapital Accumulator, aka "AKA", aims at delivering cutting-edge wealth management strategies designed to achieve rapid capital accumulation.
+Algorithmic Kapital Accumulator, aka "AKA", algorithmic trading framework
 
 ## Getting Started
 
