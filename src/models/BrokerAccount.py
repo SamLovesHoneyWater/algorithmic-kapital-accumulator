@@ -57,7 +57,8 @@ class BrokerAccount(object):
                     side = order.order_side,
                     type = order.order_type,
                     time_in_force = TimeInForce.DAY,
-                    limit_price = order.unit_price
+                    limit_price = order.unit_price,
+                    extended_hours = True
                 )
             elif order.order_type == OrderType.MARKET:
                 req = MarketOrderRequest(
